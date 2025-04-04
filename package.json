@@ -1,0 +1,27 @@
+{
+  "name": "qr-code-system",
+  "version": "1.0.0",
+  "description": "QR Code Generation & Scanning System",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/app.js",
+    "server": "npx nodemon server/app.js",
+    "client": "cd client && npm run dev",
+    "dev": "npm run server & npm run client",
+    "install-all": "npm install && cd client && npm install --legacy-peer-deps && cd ../server && npm install"
+  },
+  "keywords": [
+    "qrcode",
+    "mern",
+    "react",
+    "node",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "vite": "^6.2.5"
+  }
+}
